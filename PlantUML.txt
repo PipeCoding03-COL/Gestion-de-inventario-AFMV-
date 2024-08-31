@@ -1,0 +1,49 @@
+@startuml
+
+class Producto {
+  + nombre
+  + descripcion
+  + precio
+  - stockInicial
+  - categoria
+
+  - agregarStock(cantidad)
+  - retirarStock(cantidad)
+  - calcularValorStock()
+}
+
+class Categoria {
+  + nombre
+  - descripcion
+
+  - agregarProducto(Producto)
+  - eliminarProducto(Producto)
+}
+
+class Proveedor {
+  + nombre
+  - direccion
+  - telefono
+  - productosSuministrados
+
+  + agregarProductoAlListado(Producto)
+  + eliminarProductoDelListado(Producto)
+}
+
+class Bodega {
+  + nombre
+  - ubicacion
+  - capacidadMax
+  - productosSuministrados
+
+  + registrarBodega()
+  - agregarProductoAlListado(Producto)
+  - retirarProductoDelListado(Producto)
+  + consultarDisponibilidad(Bodega, Producto)
+}
+
+Producto "many" o-- "1" Categoria : contains
+Producto "many" o-- "many" Bodega : aggregation
+Producto "many" o-- "many" Proveedor : aggregation
+
+@enduml
