@@ -27,4 +27,4 @@ Este proyecto es un sistema de gestión de inventario diseñado para manejar pro
 ## Ejecución
 Para ejecutar el proyecto, usa el siguiente comando:
 ```bash
-python main.py
+python \src\main.py
