@@ -11,7 +11,7 @@ Este proyecto es un sistema de gestión de inventario diseñado para manejar pro
 ## Instalación
 1. Clonar el repositorio:
     ```bash
-    git clone https://github.com/
+    git clone https://github.com/PipeCoding03-COL/Gestion-de-inventario-AFMV-
     ```
 2. Crear y activar el entorno virtual:
     ```bash
