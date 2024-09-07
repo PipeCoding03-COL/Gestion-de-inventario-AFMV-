@@ -5,7 +5,7 @@ def main():
 
     opcion = input("Opción que desea ejecutar: ")
 
-    if opcion == 1:
+    if opcion== 1:
         Producto
 
 def mostrarMenu():
