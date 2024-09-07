@@ -11,6 +11,7 @@ def main():
 def mostrarMenu():
     print("Menú de opciones:")
     print("1. Crear un producto")
+    print("2. Prueba")
 
 if __name__ == "__main__":
     main()
